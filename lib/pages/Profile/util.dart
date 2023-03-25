@@ -28,6 +28,7 @@ class Category extends StatelessWidget {
         Icon(
           Icons.arrow_forward_ios,
           color: Colors.grey,
+          size: 18,
         )
       ],
     );

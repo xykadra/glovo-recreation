@@ -20,7 +20,7 @@ class PanelWidget extends StatelessWidget {
           ),
 
           //categories
-
+          SizedBox(height: 20,),
           Category(
               name: "My orders",
               // ignore: prefer_const_constructors
@@ -29,7 +29,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
 
           Category(
@@ -39,7 +39,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           Category(
               name: "Share and earn!",
@@ -48,7 +48,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
 
           Category(
@@ -58,7 +58,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
 
           Category(
@@ -68,7 +68,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
 
           Category(
@@ -78,7 +78,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
 
           Category(
@@ -88,7 +88,7 @@ class PanelWidget extends StatelessWidget {
                 color: Colors.orange,
               )),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
           Category(
               name: "Log out",
@@ -98,12 +98,12 @@ class PanelWidget extends StatelessWidget {
               )),
           // ignore: prefer_const_constructors
           SizedBox(
-            height: 100,
+            height: 40,
           ),
           Align(
             alignment: Alignment.bottomRight,
             child: Text(
-              "Version 1.2",
+              "Version 1.1",
               style: GoogleFonts.inter(color: Colors.grey),
             ),
           )
