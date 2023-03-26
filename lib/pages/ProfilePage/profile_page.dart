@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glovo_recreation/pages/Profile/panel_widget.dart';
+import 'package:glovo_recreation/pages/ProfilePage/panel_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';

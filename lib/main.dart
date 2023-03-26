@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glovo_recreation/pages/welcome_page.dart';
+import 'package:glovo_recreation/pages/WelcomePage/welcome_page.dart';
 
 void main() {
   runApp(const MyApp());
