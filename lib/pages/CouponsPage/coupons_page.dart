@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 
@@ -82,15 +83,21 @@ class CouponsPage extends StatelessWidget {
                           style: GoogleFonts.inter(
                               color: Colors.white, fontWeight: FontWeight.bold),
                         ),
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                              color: Colors.yellow,
-                              borderRadius: BorderRadius.circular(30)),
-                          child: Text(
-                            "Share code",
-                            style:
-                                GoogleFonts.inter(fontWeight: FontWeight.bold),
+                        GestureDetector(
+                          onTap: (){
+                            Clipboard.setData(ClipboardData(text: "8MXQPZ3"));
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Copied to clipboard")));
+                          },
+                          child: Container(
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                color: Colors.yellow,
+                                borderRadius: BorderRadius.circular(30)),
+                            child: Text(
+                              "Share code",
+                              style:
+                                  GoogleFonts.inter(fontWeight: FontWeight.bold),
+                            ),
                           ),
                         )
                       ],

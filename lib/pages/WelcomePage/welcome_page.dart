@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:glovo_recreation/pages/ProfilePage/profile_page.dart';
 import "package:glovo_recreation/pages/WelcomePage/util.dart";
-import "package:glovo_recreation/pages/coupons_page.dart";
+import 'package:glovo_recreation/pages/CouponsPage/coupons_page.dart';
 import "package:google_fonts/google_fonts.dart";
 
 class WelcomePage extends StatelessWidget {

@@ -25,7 +25,7 @@ class PanelWidget extends StatelessWidget {
               name: "My orders",
               // ignore: prefer_const_constructors
               iconOfCategory: Icon(
-                Icons.alternate_email,
+                Icons.online_prediction_rounded,
                 color: Colors.orange,
               )),
           const SizedBox(
