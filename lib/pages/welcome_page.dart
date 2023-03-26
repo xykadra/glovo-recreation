@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:glovo_recreation/pages/Profile/profile_page.dart';
+import "package:glovo_recreation/pages/coupons_page.dart";
 import "package:google_fonts/google_fonts.dart";
 
 class WelcomePage extends StatelessWidget {
@@ -69,17 +70,22 @@ class WelcomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                      height: 35,
-                      width: 40,
-                      decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 72, 72, 72),
-                          borderRadius: BorderRadius.circular(35)),
-                      child: Icon(
-                        Icons.ios_share_outlined,
-                        color: Color.fromARGB(255, 255, 204, 0),
-                        weight: 3,
-                      )),
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: ((context) => CouponsPage())));
+                    },
+                    child: Container(
+                        height: 35,
+                        width: 40,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 72, 72, 72),
+                            borderRadius: BorderRadius.circular(35)),
+                        child: Icon(
+                          Icons.ios_share_outlined,
+                          color: Color.fromARGB(255, 255, 204, 0),
+                          weight: 3,
+                        )),
+                  ),
                 ],
               ),
             ),
