@@ -1,8 +1,11 @@
 import "package:flutter/material.dart";
+import "package:glovo_recreation/MovingContainers/util2.dart";
 import 'package:glovo_recreation/pages/ProfilePage/profile_page.dart';
 import "package:glovo_recreation/pages/WelcomePage/util.dart";
 import 'package:glovo_recreation/pages/CouponsPage/coupons_page.dart';
 import "package:google_fonts/google_fonts.dart";
+
+import "../../MovingContainers/util.dart";
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -113,18 +116,13 @@ class WelcomePage extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 25.0, vertical: 10),
+                        horizontal: 0.0, vertical: 10),
                     child: Container(
                       height: 420,
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 48, 48, 48),
+                          color: Colors.black,
                           borderRadius: BorderRadius.circular(12)),
-                      child: Center(
-                          child: Text(
-                        "Kategorije",
-                        style: GoogleFonts.sourceCodePro(
-                            color: Colors.white, fontSize: 32),
-                      )),
+                      child: TouchMove2(),
                     ),
                   ),
                   SizedBox(
@@ -144,7 +142,7 @@ class WelcomePage extends StatelessWidget {
                       rating2: 96,
                       rating3: 94,
                       rating4: 99),
-                      FoodCategory(
+                  FoodCategory(
                       nameOfCategory: "Best of Sarajevo",
                       image1Path: "lib/assets/hamburger.jpg",
                       image2Path: "lib/assets/kfc.jpg",
@@ -158,7 +156,7 @@ class WelcomePage extends StatelessWidget {
                       rating2: 96,
                       rating3: 94,
                       rating4: 99),
-                      FoodCategory(
+                  FoodCategory(
                       nameOfCategory: "New to Glovo",
                       image1Path: "lib/assets/hamburger.jpg",
                       image2Path: "lib/assets/kfc.jpg",
