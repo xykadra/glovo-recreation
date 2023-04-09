@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:glovo_recreation/pages/CouponsPage/coupons_page.dart';
+import 'package:glovo_recreation/pages/ProfilePage/pagesInProfilePage/orders_page.dart';
 import 'package:glovo_recreation/pages/ProfilePage/util.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -13,21 +15,21 @@ class PanelWidget extends StatelessWidget {
   Widget build(BuildContext context) => ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          Text(
-            'Account',
-            style: GoogleFonts.inter(
-                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
-          ),
-
+          
           //categories
-          SizedBox(height: 20,),
-          Category(
-              name: "My orders",
-              // ignore: prefer_const_constructors
-              iconOfCategory: Icon(
-                Icons.online_prediction_rounded,
-                color: Colors.orange,
-              )),
+          SizedBox(height: 30,),
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>OrdersPage()));
+            },
+            child: Category(
+                name: "My orders",
+                // ignore: prefer_const_constructors
+                iconOfCategory: Icon(
+                  Icons.online_prediction_rounded,
+                  color: Colors.orange,
+                )),
+          ),
           const SizedBox(
             height: 20,
           ),
@@ -41,12 +43,17 @@ class PanelWidget extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          Category(
-              name: "Share and earn!",
-              iconOfCategory: const Icon(
-                Icons.card_giftcard,
-                color: Colors.orange,
-              )),
+          GestureDetector(
+            onTap:(){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>CouponsPage()));
+            },
+            child: Category(
+                name: "Share and earn!",
+                iconOfCategory: const Icon(
+                  Icons.card_giftcard,
+                  color: Colors.orange,
+                )),
+          ),
           const SizedBox(
             height: 20,
           ),
@@ -100,13 +107,7 @@ class PanelWidget extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: Text(
-              "Version 1.1",
-              style: GoogleFonts.inter(color: Colors.grey),
-            ),
-          )
+          
         ],
       );
 }

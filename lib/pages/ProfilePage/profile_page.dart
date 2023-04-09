@@ -14,6 +14,12 @@ class ProfilePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.black,
         body: SlidingUpPanel(
+          panelSnapping: true,
+          header: Text(
+            'Account',
+            style: GoogleFonts.inter(
+                color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
+          ),
           isDraggable: true,
           slideDirection: SlideDirection.UP,
           defaultPanelState: PanelState.OPEN,
@@ -64,9 +70,7 @@ class ProfilePage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 60,
-                ),
+                Spacer(),
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Text(
@@ -77,9 +81,15 @@ class ProfilePage extends StatelessWidget {
                         fontSize: 24),
                   ),
                 ),
+                Spacer(
+                  flex: 2,
+                ),
                 Container(
                     height: 200,
                     child: Lottie.asset("lib/assets/delivery.json")),
+                Spacer(
+                  flex: 7,
+                ),
               ],
             ),
           ),

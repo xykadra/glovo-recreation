@@ -146,6 +146,7 @@ class FoodCategory extends StatelessWidget {
                       )
                     ],
                   ),
+
                   //second image
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

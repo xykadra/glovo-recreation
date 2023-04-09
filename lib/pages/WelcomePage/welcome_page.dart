@@ -1,5 +1,7 @@
+import "package:dropdown_search/dropdown_search.dart";
 import "package:flutter/material.dart";
 import "package:glovo_recreation/MovingContainers/util2.dart";
+import "package:glovo_recreation/Testing/testing_drop_down.dart";
 import 'package:glovo_recreation/pages/ProfilePage/profile_page.dart';
 import "package:glovo_recreation/pages/WelcomePage/util.dart";
 import 'package:glovo_recreation/pages/CouponsPage/coupons_page.dart';
@@ -97,26 +99,31 @@ class WelcomePage extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Stupska , 19, B',
-                        style: GoogleFonts.inter(
-                            color: Colors.white, fontSize: 18),
-                      ),
-                      Icon(
-                        Icons.arrow_drop_down_rounded,
-                        color: Colors.white,
-                      )
-                    ],
+                  //select address
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 120.0),
+                    child: TestingDropDownMenu(),
                   ),
-                  SizedBox(
-                    height: 15,
-                  ),
+                  // Row(
+                  //   mainAxisAlignment: MainAxisAlignment.center,
+                  //   children: [
+                  //     Text(
+                  //       'Stupska , 19, B',
+                  //       style: GoogleFonts.inter(
+                  //           color: Colors.white, fontSize: 18),
+                  //     ),
+                  //     Icon(
+                  //       Icons.arrow_drop_down_rounded,
+                  //       color: Colors.white,
+                  //     )
+                  //   ],
+                  // ),
+                  // SizedBox(
+                  //   height: 15,
+                  // ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 0.0, vertical: 10),
+                        horizontal: 0.0, vertical: 0),
                     child: Container(
                       height: 420,
                       decoration: BoxDecoration(
